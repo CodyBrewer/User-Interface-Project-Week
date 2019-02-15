@@ -143,35 +143,48 @@ body {
   font-weight: bold;
 }
 .navigation {
+  position: relative;
   display: flex;
   flex-flow: row wrap;
-  background-color: gray;
+  background-color: #9aa5b0;
   justify-content: space-between;
 }
-.navigation img {
-  align-self: flex-end;
+.navigation .renameThisLater {
+  display: flex;
+  width: 90%;
+  margin-left: 50px;
+  margin-top: 5px;
+  justify-content: space-between;
 }
-.navigation h1 {
+.navigation .renameThisLater h1 {
+  font-family: Roboto;
   font-size: 24px;
-  color: #ffffff;
+  color: #FFFFFF;
+}
+.navigation .renameThisLater img {
+  align-self: flex-end;
 }
 .navigation nav {
   visibility: hidden;
 }
-.jumbotron {
+.navigation .jumbotron {
   display: block;
   width: 100%;
-  border: 1px solid green;
 }
-.jumbotron img {
-  width: 100%;
-  z-index: 2;
-}
-.jumbotron h2 {
+.navigation .jumbotron img {
   position: absolute;
+  width: 100%;
+  left: 0px;
+  margin-top: 0px;
+}
+.navigation .jumbotron h2 {
+  position: absolute;
+  font-family: Roboto;
   font-weight: Bold;
   font-size: 64px;
   line-height: 75px;
-  Color: black;
-  z-index: 1;
+  Color: #FFFFFF;
+  z-index: 100;
+  left: 35px;
+  top: 250px;
 }

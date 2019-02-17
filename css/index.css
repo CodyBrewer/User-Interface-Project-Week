@@ -212,7 +212,6 @@ body {
 .container .home-container .top-section .top-content {
   display: flex;
   flex-direction: row;
-  margin: 0 auto;
   margin-bottom: 5%;
 }
 .container .home-container .top-section .top-content .words {

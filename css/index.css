@@ -138,46 +138,57 @@ html {
   font-size: 62.5%;
 }
 body {
-  width: 800px;
+  width: 1024px;
   margin: 0 auto;
-  font-weight: bold;
 }
-.navigation {
+.container {
+  display: flex;
+  flex-flow: column wrap;
+}
+.container .nav-container {
+  display: flex;
+  flex-direction: column;
+  height: 510px;
+  margin-bottom: 17%;
+}
+.container .nav-container .navigation {
+  width: 1024px;
   position: relative;
   display: flex;
   flex-flow: row wrap;
   background-color: #9aa5b0;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
-.navigation .renameThisLater {
+.container .nav-container .navigation .renameThisLater {
   display: flex;
   width: 90%;
   margin-left: 50px;
   margin-top: 5px;
   justify-content: space-between;
 }
-.navigation .renameThisLater h1 {
+.container .nav-container .navigation .renameThisLater h1 {
   font-family: Roboto;
   font-size: 24px;
   color: #FFFFFF;
 }
-.navigation .renameThisLater img {
+.container .nav-container .navigation .renameThisLater img {
   align-self: flex-end;
 }
-.navigation nav {
+.container .nav-container .navigation nav {
   visibility: hidden;
 }
-.navigation .jumbotron {
+.container .nav-container .navigation .jumbotron {
   display: block;
   width: 100%;
 }
-.navigation .jumbotron img {
+.container .nav-container .navigation .jumbotron img {
   position: absolute;
   width: 100%;
   left: 0px;
   margin-top: 0px;
 }
-.navigation .jumbotron h2 {
+.container .nav-container .navigation .jumbotron h2 {
   position: absolute;
   font-family: Roboto;
   font-weight: Bold;
@@ -187,4 +198,55 @@ body {
   z-index: 100;
   left: 35px;
   top: 250px;
+}
+.container .home-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+}
+.container .home-container .top-section {
+  display: flex;
+  flex-direction: column;
+}
+.container .home-container .top-section .top-content {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  margin-bottom: 5%;
+}
+.container .home-container .top-section .top-content .words {
+  padding: 40px 5px;
+  width: 50%;
+}
+.container .home-container .top-section .top-content .words h3 {
+  font-family: Roboto;
+  font-weight: Bold;
+  color: #222222;
+  font-size: 28px;
+  margin: 3%;
+}
+.container .home-container .top-section .top-content .words p {
+  font-weight: normal;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 24px;
+  width: 90%;
+  margin: 3%;
+}
+.container .home-container .top-section .top-content .words .button {
+  background: #FFFFFF;
+  border: 1px solid #222222;
+  margin: 10px 0;
+  padding: 5px 10px;
+  width: 25%;
+  margin: 3%;
+}
+.container .home-container .top-section .top-content .words .button p {
+  font-size: 16px;
+  font-family: Roboto;
+  text-align: center;
+}
+.container .home-container .top-section .top-content .img-2 {
+  margin-right: 4%;
 }

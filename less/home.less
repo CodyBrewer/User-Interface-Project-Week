@@ -72,6 +72,7 @@ html{
     flex-direction: column;
     width: 90%;
     margin: 0 auto;
+    // border: 1px solid red;
     .top-section {
       display: flex;
       flex-direction: column;
@@ -116,6 +117,73 @@ html{
           margin-right: 4%;
         }
       }
-    }
+    } //end of top section
+    .bottom-section {
+      // border: 1px solid blue;
+      width:100%;
+      display: flex;
+      flex-direction: column;
+      img{
+        width: 100%;
+      }
+        h3{
+          font-family: @font;
+          font-weight: @subWeight;
+          color:@subColor;
+          font-size:@subSize;
+          margin: 3%;
+      }
+      .project{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30%;
+        // border: 1px solid blue;
+        .reptar{
+          display: block;
+          position: relative;
+          .right-box{
+            position: absolute;
+            right: 0px;
+            top: 80%;
+            background-color: @gray;
+            width: 38%;
+            height: 30%;
+            border: 1px solid @white;
+            display: flex;
+            justify-content: center;
+            h4{
+              width: 90%;
+              padding-top: 8%;
+              font-size: @subSize;
+              font-family: @font;
+              font-weight: normal;
+              text-align: center;
+            }
+          }
+          .left-box{
+            position: absolute;
+            left: 0px;
+            top: 80%;
+            background-color: @gray;
+            width: 41%;
+            height: 35%;
+            border: 1px solid @white;
+            display: flex;
+            justify-content: center;
+            h4{
+              width: 90%;
+              padding-top: 8%;
+              font-size: @subSize;
+              font-family: @font;
+              font-weight: normal;
+              text-align: center;
+            }
+          }
+        }
+        .project-words{
+          margin-top: 20%;
+        }
+      }
+    }//end of bottom section
   }//end of home container
 }//end of container

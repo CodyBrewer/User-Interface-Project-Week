@@ -249,3 +249,68 @@ body {
 .container .home-container .top-section .top-content .img-2 {
   margin-right: 4%;
 }
+.container .home-container .bottom-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container .home-container .bottom-section img {
+  width: 100%;
+}
+.container .home-container .bottom-section h3 {
+  font-family: Roboto;
+  font-weight: Bold;
+  color: #222222;
+  font-size: 28px;
+  margin: 3%;
+}
+.container .home-container .bottom-section .project {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30%;
+}
+.container .home-container .bottom-section .project .reptar {
+  display: block;
+  position: relative;
+}
+.container .home-container .bottom-section .project .reptar .right-box {
+  position: absolute;
+  right: 0px;
+  top: 80%;
+  background-color: #d8d8d8;
+  width: 38%;
+  height: 30%;
+  border: 1px solid #FFFFFF;
+  display: flex;
+  justify-content: center;
+}
+.container .home-container .bottom-section .project .reptar .right-box h4 {
+  width: 90%;
+  padding-top: 8%;
+  font-size: 28px;
+  font-family: Roboto;
+  font-weight: normal;
+  text-align: center;
+}
+.container .home-container .bottom-section .project .reptar .left-box {
+  position: absolute;
+  left: 0px;
+  top: 80%;
+  background-color: #d8d8d8;
+  width: 41%;
+  height: 35%;
+  border: 1px solid #FFFFFF;
+  display: flex;
+  justify-content: center;
+}
+.container .home-container .bottom-section .project .reptar .left-box h4 {
+  width: 90%;
+  padding-top: 8%;
+  font-size: 28px;
+  font-family: Roboto;
+  font-weight: normal;
+  text-align: center;
+}
+.container .home-container .bottom-section .project .project-words {
+  margin-top: 20%;
+}

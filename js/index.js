@@ -5,3 +5,5 @@ const nav = document.querySelector('nav')
 hamburger.addEventListener('click', ()=>{
     nav.style.visibility = 'visible';
 })
+
+const imgOne = document.querySelector(".img-1");

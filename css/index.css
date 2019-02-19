@@ -253,7 +253,7 @@ body {
   width: 25%;
   margin: 3%;
 }
-.container .home-container .top-section .img-2 {
+.container .home-container .top-section #img-2 {
   margin-right: 4%;
 }
 .container .home-container .bottom-section {
@@ -387,7 +387,7 @@ body {
 }
 @media (max-width: 500px) {
   body {
-    width: 500px;
+    width: 100%;
   }
   .container .nav-container {
     width: 100%;
@@ -397,30 +397,69 @@ body {
   .container .nav-container .navigation {
     width: 100%;
   }
+  .container .nav-container .navigation .renameThisLater {
+    align-self: center;
+    margin: 5px auto;
+  }
   .container .nav-container .navigation .jumbotron {
     width: 100%;
   }
   .container .nav-container .navigation .jumbotron h2 {
     position: absolute;
-    top: 100px;
+    top: 125px;
+    font-size: 50px;
+    line-height: 55px;
   }
   .container .nav-container .navigation .jumbotron img {
     width: 100%;
   }
   .container .home-container {
     margin: 0px 0px;
+    align-self: center;
   }
   .container .home-container .top-section {
     flex-direction: column;
   }
+  .container .home-container .top-section img {
+    width: 100%;
+  }
   .container .home-container .top-section .top-content-1 {
-    margin-left: 10px;
-    border: 1px solid red;
     flex-direction: column-reverse;
   }
+  .container .home-container .top-section .top-content-1 .words {
+    width: 90%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin: 0px;
+    text-align: left;
+  }
+  .container .home-container .top-section .top-content-1 P {
+    text-align: left;
+  }
+  .container .home-container .top-section .top-content-1 .button {
+    width: 100%;
+    margin: 0px auto;
+    padding: 0;
+  }
   .container .home-container .top-section .top-content-2 {
-    margin-left: 10px;
-    border: 1px solid blue;
+    margin: 0 auto;
     flex-direction: column;
+  }
+  .container .home-container .top-section .top-content-2 .words {
+    width: 90%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin: 0px auto;
+    text-align: left;
+  }
+  .container .home-container .top-section .top-content-2 P {
+    text-align: left;
+  }
+  .container .home-container .top-section .top-content-2 .button {
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px;
   }
 }

@@ -138,7 +138,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  width: 1024px;
+  max-width: 100%;
   margin: 0 auto;
 }
 .container {
@@ -374,7 +374,7 @@ body {
   align-content: space-around;
 }
 .container .footer-container .contact .offices .office {
-  margin: 0px 10%;
+  margin: 0px 5%;
 }
 .container .footer-container .contact .offices .office p {
   margin: 10px 0px;
@@ -386,32 +386,19 @@ body {
   width: 20%;
 }
 @media (max-width: 500px) {
-  body {
-    width: 100%;
-  }
   .container .nav-container {
-    width: 100%;
     margin-bottom: 80px;
     height: 300px;
-  }
-  .container .nav-container .navigation {
-    width: 100%;
   }
   .container .nav-container .navigation .renameThisLater {
     align-self: center;
     margin: 5px auto;
-  }
-  .container .nav-container .navigation .jumbotron {
-    width: 100%;
   }
   .container .nav-container .navigation .jumbotron h2 {
     position: absolute;
     top: 125px;
     font-size: 50px;
     line-height: 55px;
-  }
-  .container .nav-container .navigation .jumbotron img {
-    width: 100%;
   }
   .container .home-container {
     margin: 0px 0px;

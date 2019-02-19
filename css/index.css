@@ -374,7 +374,7 @@ body {
   align-content: space-around;
 }
 .container .footer-container .contact .offices .office {
-  margin: 0px 30px;
+  margin: 0px 10%;
 }
 .container .footer-container .contact .offices .office p {
   margin: 10px 0px;
@@ -461,5 +461,33 @@ body {
     width: 100%;
     margin: 0px auto;
     padding: 0px;
+  }
+  .container .home-container .bottom-section .project {
+    margin-bottom: 10%;
+  }
+  .container .home-container .bottom-section .project .reptar .right-box {
+    left: 5%;
+    width: 90%;
+    height: 40%;
+    top: 90%;
+  }
+  .container .home-container .bottom-section .project .reptar .left-box {
+    left: 5%;
+    width: 90%;
+    height: 40%;
+    top: 90%;
+  }
+  .container .home-container .bottom-section .project .project-words {
+    margin-top: 25%;
+    width: 90%;
+  }
+  .container .footer-container {
+    height: 550px;
+  }
+  .container .footer-container .contact .email {
+    margin-bottom: 5%;
+  }
+  .container .footer-container .copyright {
+    width: 90%;
   }
 }

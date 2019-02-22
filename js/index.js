@@ -1,9 +1,13 @@
 // JS goes here
 const hamburger = document.querySelector('.hamburger');
-const nav = document.querySelector('nav')
+const nav = document.querySelector('nav');
+const navigation = document.querySelector('.navigation');
 //check onwindow resize event
 hamburger.addEventListener('click', ()=>{
     nav.style.visibility = 'visible';
+    navigation.style.height = '100vh';
+    navigation.style.zIndex = 2;
+    navigation.style.opactity = 0.40;
 })
 const jumbotronImg = document.getElementById("jumbotron-img");
 const imgOne = document.getElementById("img-1");

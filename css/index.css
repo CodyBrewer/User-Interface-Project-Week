@@ -145,6 +145,7 @@ html {
 .container .nav-container {
   display: flex;
   flex-direction: column;
+  width: 100vw;
 }
 .container .nav-container .navigation {
   width: 100%;
@@ -190,7 +191,7 @@ html {
   font-size: 64px;
   line-height: 75px;
   Color: #FFFFFF;
-  z-index: 100;
+  z-index: 1;
   left: 35px;
   top: 30%;
 }

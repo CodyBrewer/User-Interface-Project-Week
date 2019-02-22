@@ -158,6 +158,7 @@ html {
 .container .nav-container .navigation .title-container {
   display: flex;
   width: 90%;
+  height: 10%;
   margin-left: 50px;
   justify-content: space-between;
 }
@@ -167,7 +168,7 @@ html {
   color: #FFFFFF;
 }
 .container .nav-container .navigation .title-container img {
-  align-self: flex-end;
+  align-self: baseline;
 }
 .container .nav-container .navigation nav {
   visibility: hidden;
@@ -381,9 +382,11 @@ html {
   margin-bottom: 2%;
   width: 30%;
 }
+.invisible {
+  display: none;
+}
 @media (max-width: 500px) {
   .container .nav-container .navigation .title-container {
-    align-self: center;
     margin: 0px auto;
   }
   .container .jumbotron h2 {

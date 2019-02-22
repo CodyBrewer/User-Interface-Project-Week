@@ -2,23 +2,25 @@
 @media (max-width: 500px) { 
     .container{
         .nav-container{
-            margin-bottom: 80px;
-            height: 300px;
+            // margin-bottom: 80px;
+            // height: 300px;
             .navigation{
-                .renameThisLater{
+                .title-container{
                     align-self: center;
-                    margin: 5px auto;
-                }
-                .jumbotron {
-                    h2{
-                        position: absolute;
-                        top: 125px;
-                        font-size: 50px;
-                        line-height: 55px;
-                    }
+                    margin: 0px auto;
                 }
             }
-        } .home-container{
+        }
+        .jumbotron {
+            h2{
+                position: absolute;
+                top: 125px;
+                font-size: 50px;
+                line-height: 55px;
+                margin-bottom: 5%;
+            }
+        }
+        .home-container{
             margin: 0px 0px;
             // border:2px solid pink;
             align-self: center;
@@ -48,6 +50,9 @@
                         width: 100%;
                         margin: 0px auto;
                         padding: 0;
+                        p{
+                            text-align: center;
+                        }
                     }
                 }
 
@@ -72,6 +77,9 @@
                         width: 100%;
                         margin: 0px auto;
                         padding:0px;
+                        p{
+                            text-align: center;
+                        }
                     }
                 }
             }
@@ -84,14 +92,19 @@
                             width: 90%;
                             height: 40%;
                             top: 90%;
+                            h4{
+                                padding-top: 4%;
+                            }
                         }
                         .left-box{
                             left: 5%;
                             width: 90%;
                             height: 40%;
                             top: 90%;
+                            h4{
+                                padding-top: 4%;
+                            }
                         }
-
                     }
                     .project-words{
                         margin-top: 25%;
@@ -101,10 +114,13 @@
             }
         }
         .footer-container{
-            height: 550px;
+            height: 600px;
             .contact{
                 .email{
                     margin-bottom: 5%;
+                }
+                .offices{
+                    flex-flow: column wrap;
                 }
             }
             .copyright{

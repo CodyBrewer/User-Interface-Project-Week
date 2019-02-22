@@ -137,19 +137,14 @@ table {
 html {
   font-size: 62.5%;
 }
-body {
-  max-width: 100%;
-  margin: 0 auto;
-}
 .container {
   display: flex;
   flex-flow: column wrap;
+  width: 100vw;
 }
 .container .nav-container {
   display: flex;
   flex-direction: column;
-  height: 510px;
-  margin-bottom: 17%;
 }
 .container .nav-container .navigation {
   width: 100%;
@@ -158,37 +153,37 @@ body {
   flex-flow: row wrap;
   background-color: #9aa5b0;
   justify-content: space-between;
-  margin-bottom: 20px;
 }
-.container .nav-container .navigation .renameThisLater {
+.container .nav-container .navigation .title-container {
   display: flex;
   width: 90%;
   margin-left: 50px;
-  margin-top: 5px;
   justify-content: space-between;
 }
-.container .nav-container .navigation .renameThisLater h1 {
+.container .nav-container .navigation .title-container h1 {
   font-family: Roboto, Arial, Sans-serif;
   font-size: 24px;
   color: #FFFFFF;
 }
-.container .nav-container .navigation .renameThisLater img {
+.container .nav-container .navigation .title-container img {
   align-self: flex-end;
 }
 .container .nav-container .navigation nav {
   visibility: hidden;
 }
-.container .nav-container .navigation .jumbotron {
+.container .jumbotron {
+  margin: 0 auto;
   display: block;
   width: 100%;
+  margin-bottom: 70%;
 }
-.container .nav-container .navigation .jumbotron img {
+.container .jumbotron img {
   position: absolute;
   width: 100%;
   left: 0px;
   margin-top: 0px;
 }
-.container .nav-container .navigation .jumbotron h2 {
+.container .jumbotron h2 {
   position: absolute;
   font-family: Roboto, Arial, Sans-serif;
   font-weight: Bold;
@@ -386,19 +381,16 @@ body {
   width: 20%;
 }
 @media (max-width: 500px) {
-  .container .nav-container {
-    margin-bottom: 80px;
-    height: 300px;
-  }
-  .container .nav-container .navigation .renameThisLater {
+  .container .nav-container .navigation .title-container {
     align-self: center;
-    margin: 5px auto;
+    margin: 0px auto;
   }
-  .container .nav-container .navigation .jumbotron h2 {
+  .container .jumbotron h2 {
     position: absolute;
     top: 125px;
     font-size: 50px;
     line-height: 55px;
+    margin-bottom: 5%;
   }
   .container .home-container {
     margin: 0px 0px;
@@ -429,6 +421,9 @@ body {
     margin: 0px auto;
     padding: 0;
   }
+  .container .home-container .top-section .top-content-1 .button p {
+    text-align: center;
+  }
   .container .home-container .top-section .top-content-2 {
     margin: 0 auto;
     flex-direction: column;
@@ -449,6 +444,9 @@ body {
     margin: 0px auto;
     padding: 0px;
   }
+  .container .home-container .top-section .top-content-2 .button p {
+    text-align: center;
+  }
   .container .home-container .bottom-section .project {
     margin-bottom: 10%;
   }
@@ -458,27 +456,32 @@ body {
     height: 40%;
     top: 90%;
   }
+  .container .home-container .bottom-section .project .reptar .right-box h4 {
+    padding-top: 4%;
+  }
   .container .home-container .bottom-section .project .reptar .left-box {
     left: 5%;
     width: 90%;
     height: 40%;
     top: 90%;
   }
+  .container .home-container .bottom-section .project .reptar .left-box h4 {
+    padding-top: 4%;
+  }
   .container .home-container .bottom-section .project .project-words {
     margin-top: 25%;
     width: 90%;
   }
   .container .footer-container {
-    height: 550px;
+    height: 600px;
   }
   .container .footer-container .contact .email {
     margin-bottom: 5%;
   }
+  .container .footer-container .contact .offices {
+    flex-flow: column wrap;
+  }
   .container .footer-container .copyright {
     width: 90%;
   }
-}
-body {
-  width: 1024px;
-  margin: 0 auto;
 }

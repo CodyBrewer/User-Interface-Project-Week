@@ -192,7 +192,7 @@ html {
   Color: #FFFFFF;
   z-index: 100;
   left: 35px;
-  top: 250px;
+  top: 30%;
 }
 .container .home-container {
   display: flex;
@@ -378,7 +378,7 @@ html {
   align-self: center;
   margin-top: 3%;
   margin-bottom: 2%;
-  width: 20%;
+  width: 30%;
 }
 @media (max-width: 500px) {
   .container .nav-container .navigation .title-container {
@@ -387,10 +387,10 @@ html {
   }
   .container .jumbotron h2 {
     position: absolute;
-    top: 125px;
+    top: 50%;
     font-size: 50px;
     line-height: 55px;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
   }
   .container .home-container {
     margin: 0px 0px;

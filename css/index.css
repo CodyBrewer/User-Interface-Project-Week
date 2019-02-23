@@ -586,6 +586,7 @@ html {
   flex-wrap: wrap;
 }
 .tabs .tabs-links {
+  font: Roboto, Arial, Sans-serif;
   display: flex;
   justify-content: space-between;
   padding: 40px 0;

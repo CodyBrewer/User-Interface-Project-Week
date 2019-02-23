@@ -586,7 +586,7 @@ html {
   flex-wrap: wrap;
 }
 .tabs .tabs-links {
-  font: Roboto, Arial, Sans-serif;
+  font-family: Roboto, Arial, Sans-serif;
   display: flex;
   justify-content: space-between;
   padding: 40px 0;
@@ -610,8 +610,7 @@ html {
   background-color: #d8d8d8;
 }
 .tabs .tabs-link-selected:visited {
-  background: white;
-  color: purple;
+  background: #FFFFFF;
 }
 .footer-container {
   width: 100%;

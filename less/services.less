@@ -63,7 +63,7 @@
     }
   
     .tabs-links {
-      font: @font;
+      font-family: @font;
       display: flex;
       justify-content: space-between;
       padding: 40px 0;
@@ -80,15 +80,14 @@
       }
     }
     .tabs-link-selected {
-      background-color: #5E9FB9;
+      background-color:@tabSelect;
       color: @white;
       &:active {
         color: @black;
         background-color: @gray;
       }
       &:visited {
-        background: white;
-        color: purple;
+        background: @white;
       } 
     }
 }

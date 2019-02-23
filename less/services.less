@@ -1,0 +1,152 @@
+.services-jumbotron{
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    margin-bottom: 25%;
+    img {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    margin-top:0px;
+    }
+    h2 {
+    font-family: @font;
+    position: absolute;
+    color: @white;
+    font-size: @jumboSize;
+    line-height: 75px;
+    top: 150px;
+    left: 50px;
+    }
+}
+.services-container {
+    margin: 2% 5%;
+    p {
+      font-family: @font;  
+      line-height: @lineHeight;
+      font-size: @fontSize;
+    }
+  }
+
+  .tabs {
+    width: 90%;
+    margin: 2% 5%;
+    .tabs-item {
+      display: none; 
+      .tabs-item-title {
+        display: flex;
+        flex-flow: row wrap;
+        width: 50%;
+        font-size: 2.4rem;
+        padding-top: 20px;
+        font-family: @font;
+      }
+      .tabs-item-description {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        width: 50%;
+        font-size: @fontSize;
+        line-height: @lineHeight;
+        padding-bottom: 50px;
+        padding-right: 10px;
+        p{
+            font-family: @font;
+            margin-bottom: 10px;
+        }
+      }
+    }
+    .tabs-item-selected {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .tabs-links {
+      display: flex;
+      justify-content: space-between;
+      padding: 40px 0;
+    }
+  
+    .tabs-link {
+      border: 1px solid black;
+      padding: 10px 30px;
+      font-size: 2rem;
+      color: @black;
+      &:hover {
+        color: @tabHover;
+        background-color: @gray;
+      }
+    }
+    .tabs-link-selected {
+      background-color: #5E9FB9;
+      color: @white;
+      &:active {
+        color: @black;
+        background-color: @gray;
+      }
+      &:visited {
+        background: white;
+        color: purple;
+      } 
+    }
+}
+.footer-container{
+    width: 100%;
+    height: 250px;
+    background-color:@footer;
+    display: flex;
+    flex-direction: column;
+    h5{
+      font-family: @font;
+      font-weight: @footerWeight;
+      font-size: @footerSize;
+      line-height: @footerLineHeight;
+      color: @footerColor;
+
+    }
+    p{
+      color: @gray;
+      font-weight: 100;
+      font-family: @font;
+      font-size: 12px;
+    }
+    input{
+      color: @footer;
+      width: 98%;
+      height: 30px;
+      border-radius: 5px;
+      font-size: @footerSize;
+      margin: 2% 0;
+    }
+    .contact{
+      display: flex;
+      flex-flow: row wrap;
+      padding-top: 3%;
+      .email{
+        margin: 0px 6%;
+        h5{
+          margin-bottom: 2%;
+          width: 100%;
+        }
+      }
+      .offices{
+        display: flex;
+        flex-flow: row wrap;
+        width: 49%;
+        align-content: space-around;
+        .office{
+          margin: 0px 5%;
+          p{
+            margin: 10px 0px;
+          }
+        }
+      }
+    }
+    .copyright{
+      align-self: center;
+      margin-top: 3%;
+      margin-bottom: 2%;
+      width: 30%;
+    }
+  }

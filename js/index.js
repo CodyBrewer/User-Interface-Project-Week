@@ -44,5 +44,4 @@ function resize() {
         console.log(imgOne.src);
     }
 }
-console.log(jumbotronImg.src);
 window.onresize = resize;

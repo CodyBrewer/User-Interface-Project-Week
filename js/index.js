@@ -5,19 +5,16 @@ const nav = document.querySelector('nav');
 const navigation = document.querySelector('.navigation');
 //check onwindow resize event
 hamburger.addEventListener('click', ()=>{
-    nav.style.visibility = 'visible';
+    nav.style.display = 'block';
     navigation.style.height = '100vh';
-    navigation.style.zIndex = 2;
-    navigation.style.opactity = 0.40;
     closeButton.classList.toggle('invisible');
     hamburger.classList.toggle('invisible');
-
 })
 closeButton.addEventListener('click', ()=>{
     closeButton.classList.toggle('invisible');
     hamburger.classList.toggle('invisible');
     navigation.style.height = '31px';
-    nav.style.visibility = 'hidden';
+    nav.style.display = 'none';
 })
 const jumbotronImg = document.getElementById("jumbotron-img");
 const imgOne = document.getElementById("img-1");
@@ -25,8 +22,6 @@ const imgTwo = document.getElementById("img-2");
 const villaImg = document.getElementById("villa-img");
 const outskirtsImg = document.getElementById("outskirts-img");
 const blocksImg = document.getElementById("blocks-img");
-
-
 
 function resize() {
     let w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
@@ -49,5 +44,5 @@ function resize() {
         console.log(imgOne.src);
     }
 }
-
+console.log(jumbotronImg.src);
 window.onresize = resize;

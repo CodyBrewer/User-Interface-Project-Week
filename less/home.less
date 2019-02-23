@@ -4,43 +4,61 @@ html{
   .container{
     display: flex;
     flex-flow: column wrap;
-    width: 100vw;
-    .nav-container{
-        display: flex;
-        flex-direction: column;
-        // height: 510px;
-        width: 100vw;
+    margin: 0 auto;
     .navigation  {
-      width: 100%;
-      position: relative;
-      display: flex;
-      flex-flow: row wrap;
       background-color: @navBackground;
-      justify-content: space-between;
+      padding: 15px 0; 
+      position: fixed;
+      z-index: 1;
+      width: 100vw;
       .title-container {
           display: flex;
-          width: 90%;
-          height:10%;
-          margin-left: 50px;
-          // margin-top:5px;
           justify-content: space-between;
+          width: 100vw;
+          z-index: 2;
           h1{
+            font-weight: bold;
               font-family: @font;
-              font-size: 24px;
+              font-size: @navSize;
               color: @white;
+              z-index: 2;
             }
           img{
               align-self: baseline;
+              z-index: 2;
           }
       }
       nav {
-        visibility: hidden;
+        display: none;
+        position: fixed;
+        top: 1px;
+        height: 100vh;
+        background-color:RGBA(152, 164, 175,0.5);
+        color: #FFFFFF;
+        opacity: .90;
+        z-index: 1;
+        padding-top: 15%;
+        width: 100vw;
+        a{
+          font-family: @font;
+          font-size: 48px;
+          font-weight: bold;
+          color: #FFFFFF;
+          text-decoration: none;
+          line-height: 85px;
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+        }
+        a:hover{
+          Color: #222222
+        }
   
       }
     }
-  }
 
       .jumbotron {
+        position: relative;
         margin: 0 auto;
           display: block;
           width: 100%;
@@ -52,15 +70,13 @@ html{
             margin-top:0px;
           }
           h2 {
-            position: absolute;
             font-family: @font;
-            font-weight: @jumboWeight;
+            position: absolute;
+            color: @white;
             font-size: @jumboSize;
-            line-height : @jumboLineHeight;
-            Color: @jumboColor;
-            z-index: 1;
-            left: 35px;
-            top: 30%;
+            line-height: 75px;
+            top: 250px;
+            left: 50px;
           }
         }
 
@@ -70,7 +86,7 @@ html{
     width: 90%;
     margin: 0 auto;
     p{
-      font-size: 16px;
+      font-size: @fontSize;
       font-family: @font;
       text-align: center;
       line-height: @lineHeight;
@@ -102,7 +118,7 @@ html{
         p{
           font-weight:normal;
           font-family: @font;
-          font-size: @size;
+          font-size: @fontSize;
           line-height: @lineHeight;
           width: 90%;
           margin: 3%;
@@ -117,10 +133,7 @@ html{
       }
 
       }
-      #img-2{
-        margin-right: 4%;
-      }
-    } //end of top section
+    }
     .bottom-section {
       width:100%;
       display: flex;
@@ -191,8 +204,8 @@ html{
           }
         }
       }
-    }//end of bottom section
-  }//end of home container
+    }
+  }
   .footer-container{
     width: 100%;
     height: 200px;

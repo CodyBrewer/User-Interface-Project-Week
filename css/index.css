@@ -140,40 +140,60 @@ html {
 .container {
   display: flex;
   flex-flow: column wrap;
+  margin: 0 auto;
+}
+.container .navigation {
+  background-color: rgba(152, 164, 175, 0.8);
+  padding: 15px 0;
+  position: fixed;
+  z-index: 1;
   width: 100vw;
 }
-.container .nav-container {
+.container .navigation .title-container {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   width: 100vw;
+  z-index: 2;
 }
-.container .nav-container .navigation {
-  width: 100%;
-  position: relative;
-  display: flex;
-  flex-flow: row wrap;
-  background-color: #9aa5b0;
-  justify-content: space-between;
-}
-.container .nav-container .navigation .title-container {
-  display: flex;
-  width: 90%;
-  height: 10%;
-  margin-left: 50px;
-  justify-content: space-between;
-}
-.container .nav-container .navigation .title-container h1 {
+.container .navigation .title-container h1 {
+  font-weight: bold;
   font-family: Roboto, Arial, Sans-serif;
-  font-size: 24px;
+  font-size: 2.4rem;
   color: #FFFFFF;
+  z-index: 2;
 }
-.container .nav-container .navigation .title-container img {
+.container .navigation .title-container img {
   align-self: baseline;
+  z-index: 2;
 }
-.container .nav-container .navigation nav {
-  visibility: hidden;
+.container .navigation nav {
+  display: none;
+  position: fixed;
+  top: 1px;
+  height: 100vh;
+  background-color: rgba(152, 164, 175, 0.5);
+  color: #FFFFFF;
+  opacity: 0.9;
+  z-index: 1;
+  padding-top: 15%;
+  width: 100vw;
+}
+.container .navigation nav a {
+  font-family: Roboto, Arial, Sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-decoration: none;
+  line-height: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.container .navigation nav a:hover {
+  Color: #222222;
 }
 .container .jumbotron {
+  position: relative;
   margin: 0 auto;
   display: block;
   width: 100%;
@@ -186,15 +206,13 @@ html {
   margin-top: 0px;
 }
 .container .jumbotron h2 {
-  position: absolute;
   font-family: Roboto, Arial, Sans-serif;
-  font-weight: Bold;
-  font-size: 64px;
+  position: absolute;
+  color: #FFFFFF;
+  font-size: 6.4rem;
   line-height: 75px;
-  Color: #FFFFFF;
-  z-index: 1;
-  left: 35px;
-  top: 30%;
+  top: 250px;
+  left: 50px;
 }
 .container .home-container {
   display: flex;
@@ -203,10 +221,10 @@ html {
   margin: 0 auto;
 }
 .container .home-container p {
-  font-size: 16px;
+  font-size: 1rem;
   font-family: Roboto, Arial, Sans-serif;
   text-align: center;
-  line-height: 24px;
+  line-height: 2.4rem;
   font-weight: normal;
 }
 .container .home-container .top-section {
@@ -231,14 +249,14 @@ html {
   font-family: Roboto, Arial, Sans-serif;
   font-weight: Bold;
   color: #222222;
-  font-size: 28px;
+  font-size: 2.8rem;
   margin: 3%;
 }
 .container .home-container .top-section .words p {
   font-weight: normal;
   font-family: Roboto, Arial, Sans-serif;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 2.4rem;
   width: 90%;
   margin: 3%;
 }
@@ -249,9 +267,6 @@ html {
   padding: 5px 10px;
   width: 25%;
   margin: 3%;
-}
-.container .home-container .top-section #img-2 {
-  margin-right: 4%;
 }
 .container .home-container .bottom-section {
   width: 100%;
@@ -265,7 +280,7 @@ html {
   font-family: Roboto, Arial, Sans-serif;
   font-weight: Bold;
   color: #222222;
-  font-size: 28px;
+  font-size: 2.8rem;
   margin: 3%;
 }
 .container .home-container .bottom-section .project {
@@ -291,7 +306,7 @@ html {
 .container .home-container .bottom-section .project .reptar .right-box h4 {
   width: 90%;
   padding-top: 8%;
-  font-size: 28px;
+  font-size: 2.8rem;
   font-family: Roboto, Arial, Sans-serif;
   font-weight: normal;
   text-align: center;
@@ -310,7 +325,7 @@ html {
 .container .home-container .bottom-section .project .reptar .left-box h4 {
   width: 90%;
   padding-top: 8%;
-  font-size: 28px;
+  font-size: 2.8rem;
   font-family: Roboto, Arial, Sans-serif;
   font-weight: normal;
   text-align: center;
@@ -334,8 +349,8 @@ html {
 .container .footer-container h5 {
   font-family: Roboto, Arial, Sans-serif;
   font-weight: Regular;
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 2rem;
+  line-height: 2.6rem;
   color: #FFFFFF;
 }
 .container .footer-container p {
@@ -349,7 +364,7 @@ html {
   width: 98%;
   height: 30px;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 2rem;
   margin: 2% 0;
 }
 .container .footer-container .contact {
@@ -391,10 +406,11 @@ html {
   }
   .container .jumbotron h2 {
     position: absolute;
-    top: 10%;
-    font-size: 50px;
-    line-height: 55px;
+    top: 15%;
+    font-size: 4em;
+    line-height: 4.2rem;
     margin-bottom: 10%;
+    font-weight: 100;
   }
   .container .home-container {
     margin: 0px 0px;
@@ -487,5 +503,10 @@ html {
   }
   .container .footer-container .copyright {
     width: 90%;
+  }
+}
+@media (max-width: 800px) {
+  .container .jumbotron h2 {
+    top: 90px;
   }
 }

@@ -583,7 +583,7 @@ html {
 }
 .tabs .tabs-item-selected {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 }
 .tabs .tabs-links {
   font-family: Roboto, Arial, Sans-serif;

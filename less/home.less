@@ -36,7 +36,7 @@ html{
         top: 1px;
         height: 100vh;
         background-color:RGBA(152, 164, 175,0.5);
-        color: #FFFFFF;
+        color: @white;
         opacity: .90;
         z-index: 1;
         padding-top: 15%;
@@ -45,16 +45,17 @@ html{
           font-family: @font;
           font-size: 48px;
           font-weight: bold;
-          color: #FFFFFF;
+          color: @white;
           text-decoration: none;
           line-height: 85px;
           display: flex;
           justify-content: center;
           align-items: flex-start;
+          &:hover{
+            Color: @black;
+          }
         }
-        a:hover{
-          Color: #222222
-        }
+
   
       }
     }

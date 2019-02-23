@@ -161,10 +161,12 @@ html {
   font-size: 2.4rem;
   color: #FFFFFF;
   z-index: 2;
+  padding-left: 2%;
 }
 .container .navigation .title-container img {
   align-self: baseline;
   z-index: 2;
+  padding-right: 2%;
 }
 .container .navigation nav {
   display: none;

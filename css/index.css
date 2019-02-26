@@ -282,9 +282,13 @@ html {
   width: 25%;
   margin: 3%;
 }
+.container .home-container .top-section .words .button:hover {
+  background: #d8d8d8;
+}
 .container .home-container .top-section .words .button p {
   width: 100%;
   text-align: center;
+  margin: 0px;
 }
 .container .home-container .bottom-section {
   width: 90%;
@@ -491,22 +495,22 @@ html {
   .container .home-container .bottom-section .project {
     margin-bottom: 10%;
   }
-  .container .home-container .bottom-section .project .reptar .right-box {
+  .container .home-container .bottom-section .project .project-img-container .right-box {
     left: 5%;
     width: 90%;
     height: 40%;
     top: 90%;
   }
-  .container .home-container .bottom-section .project .reptar .right-box h4 {
+  .container .home-container .bottom-section .project .project-img-container .right-box h4 {
     padding-top: 4%;
   }
-  .container .home-container .bottom-section .project .reptar .left-box {
+  .container .home-container .bottom-section .project .project-img-container .left-box {
     left: 5%;
     width: 90%;
     height: 40%;
     top: 90%;
   }
-  .container .home-container .bottom-section .project .reptar .left-box h4 {
+  .container .home-container .bottom-section .project .project-img-container .left-box h4 {
     padding-top: 4%;
   }
   .container .home-container .bottom-section .project .project-words {

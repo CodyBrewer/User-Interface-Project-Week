@@ -11,51 +11,123 @@
 </head>
 
 <body>
-
-	<h1>Contact</h1>
-
-<!-- Contactd Us Content 
-  Contact Us
-  
-Get In Touch
-
-Email Address
-Enter Email
-We'll never share your email with anyone else.
-
-How many buildings do you need planned?
-1-5
-
-Provide a brief overview of your project needs:
-
-I am a small business
-I am a residential owner
-I am a corporation
-
-Submit
-
-Where We Work
-
-New York
-123 Lane
-Suite 100
-Albany, NY 12345
-202 555 0144
-
-Florida
-Ocean Drive
-Suite 201
-Orlando, FL 22345
-502 555 0144
-
-California
-Mountain Street
-Suite 105
-San Diego, CA 22345
-702 555 0144
-
--->
-
+	<div class="container">
+		<div class="navigation">
+			<div class="title-container">
+				<h1>S&J</h1>
+				<img id ="hamburger" src="img/nav-hamburger.png" alt="triple bar hamburger">
+				<img id= "close" class = "invisible" src="img/nav-hamburger-close.png" alt="cross close button">
+			</div>
+			<nav>
+				<a href="index.html">Home</a>
+				<a href="services.html">Services</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+		</div>
+	<div class="contact-jumbotron">	
+		<img id="contact-jumbotron-img" src="img/contact/contact-jumbotron.png" alt="">
+		<h2>Contact</h2>
+	</div>
+	<div class="contact-container">
+		<div class="get-in-touch">
+			<h3>Get In Touch</h3>
+			<div class="email">
+				<h4>Email Adress</h4>
+				<input type="email" name="email" id="email" value="Enter Email" required>
+				<p>We'll never share your email with anyone else.</p>
+			</div>
+			<div class="buildings">
+				<h4>How many buildings do you need planned?</h4>
+				<select name="buildings-planned">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+			<div class="overview">
+				<h4>Provide a brief overview of your project needs:</h4>
+				<textarea name="project overview" id="" cols="30" rows="10"></textarea>
+			</div>
+			<div class="business-type">
+				<div class="small-business">
+					<input type="radio" name="business-type" id="small-business"><label for="small-business">I am a small business</label>
+				</div>
+				<div class="residential">
+					<input type="radio" name="business-type" id="residential"><label for="residential">I am a residential owner</label>
+				</div>
+				<div class="corporation">
+					<input type="radio" name="business-type" id="corporation"> <label for="corporation">I am a corporation</label>
+				</div>
+			</div>
+				<input type="submit" value="Submit" id="submit">
+		</div>
+		<div class="where">
+			<h3>Where We Work</h3>
+			<div class="offices">
+				<div class="office">
+					<h5>New York</h5>
+					<p>123 Lane</p>
+					<p>Suite 100</p>
+					<p>Albany, NY 12345</p>
+					<p>202 555 0144</p>
+				</div>
+				<div class="office">
+					<h5>Florida</h5>
+					<p>Ocean Drive</p>
+					<p>Suite 201</p>
+					<p>Orlando, FL 22345</p>
+					<p>502 555 0144</p>
+				</div>
+				<div class="office">
+					<h5>California</h5>
+					<p>Mountain Street</p>
+					<p>Suite 105</p>
+					<p>San Diego, CA 22345</p>
+					<p>702 555 0144</p>
+				</div>
+			</div>
+		</div>
+	</div>
+<footer>
+	<div class="footer-container">
+		<div class="contact">
+			<div class="email">
+				<h5>Interested in starting a project?<br>Let’s talk:</h5>
+					<input type="email" name="email" id="email" value="Enter Email" required>
+				<p>We'll never share your email with anyone else.</p>
+			</div>
+			<div class="offices">
+				<div class="office">
+					<h5>New York</h5>
+					<p>123 Lane</p>
+					<p>Suite 100</p>
+					<p>Albany, NY 12345</p>
+					<p>202 555 0144</p>
+				</div>
+				<div class="office">
+					<h5>Florida</h5>
+					<p>Ocean Drive</p>
+					<p>Suite 201</p>
+					<p>Orlando, FL 22345</p>
+					<p>502 555 0144</p>
+				</div>
+				<div class="office">
+					<h5>California</h5>
+					<p>Mountain Street</p>
+					<p>Suite 105</p>
+					<p>San Diego, CA 22345</p>
+					<p>702 555 0144</p>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<p>Copyright © 2018 Smith and Jones</p>
+		</div>
+	</div>
+</footer>
+</div> 
 	<script src="js/index.js"></script>
 </body>
 </html>

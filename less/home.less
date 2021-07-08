@@ -1,0 +1,294 @@
+html{
+    font-size: 62.5%;
+  }
+  .container{
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0 auto;
+    .navigation  {
+      background-color: @navBackground;
+      padding: 15px 0; 
+      position: fixed;
+      z-index: 1;
+      width: 100vw;
+      .title-container {
+          display: flex;
+          justify-content: space-between;
+          width: 100vw;
+          z-index: 2;
+          h1{
+              font-weight: bold;
+              font-family: @font;
+              font-size: @navSize;
+              color: @white;
+              z-index: 2;
+              padding-left: 2%;
+            }
+          img{
+              align-self: baseline;
+              z-index: 2;
+              padding-right: 2%;
+          }
+      }
+      nav {
+        display: none;
+        position: fixed;
+        top: 1px;
+        height: 100vh;
+        background-color:RGBA(152, 164, 175,0.5);
+        color: @white;
+        opacity: .90;
+        z-index: 1;
+        padding-top: 15%;
+        width: 100vw;
+        a{
+          font-family: @font;
+          font-size: 48px;
+          font-weight: bold;
+          color: @white;
+          text-decoration: none;
+          line-height: 85px;
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          &:hover{
+            Color: @black;
+          }
+        }
+
+  
+      }
+    }
+
+      .jumbotron {
+        position: relative;
+        margin: 0 auto;
+          display: block;
+          width: 100%;
+          margin-bottom: 60%;
+          img {
+            position: absolute;
+            width: 100%;
+            left: 0px;
+            margin-top:0px;
+          }
+          h2 {
+            font-family: @font;
+            position: absolute;
+            color: @white;
+            font-size: @jumboSize;
+            line-height: 75px;
+            top: 250px;
+            left: 50px;
+          }
+        }
+
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    p{
+      font-size: @fontSize;
+      font-family: @font;
+      text-align: center;
+      line-height: @lineHeight;
+      font-weight: @weight;
+    }
+    .top-section {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      width: 90%;
+      img{
+        width: 50%;
+      }
+      .top-content-1 {
+        display: flex;
+        flex-direction: row;
+        margin-bottom:5%;
+      }
+      .top-content-2 {
+        display: flex;
+        flex-direction: row;
+        margin-bottom:5%;
+        .words{
+          padding-left: 10%;
+        }
+      }
+      .words {
+        padding: 40px 5px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // align-items: center;
+        h3{
+          font-family: @font;
+          font-weight: @subWeight;
+          color:@subColor;
+          font-size: @subSize;
+          margin: 3%;
+        }
+        p{
+          font-weight:normal;
+          font-family: @font;
+          font-size: @fontSize;
+          line-height: @lineHeight;
+          width: 50%;
+          margin: 3%;
+          text-align: left;
+        }
+        .button{
+          background: @white;
+          border: 1px solid @black;
+          margin: 10px 0;
+          padding: 5px 10px;
+          width: 25%;
+          margin: 3%;
+          &:hover{
+            background: @gray;
+          }
+          p{
+            width: 100%;
+            text-align: center;
+            margin: 0px;
+          }
+        }
+      }
+    }
+    .bottom-section {
+      width:90%;
+      display: flex;
+      flex-direction: column;
+      img{
+        width: 100%;
+      }
+        h3{
+          font-family: @font;
+          font-weight: @subWeight;
+          color:@subColor;
+          font-size:@subSize;
+          margin: 3%;
+      }
+      .project{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5%;
+        .project-img-container{
+          display: block;
+          position: relative;
+          .right-box{
+            position: absolute;
+            right: 0px;
+            top: 80%;
+            background-color: @gray;
+            width: 38%;
+            height: 30%;
+            border: 1px solid @white;
+            display: flex;
+            justify-content: center;
+            h4{
+              width: 90%;
+              padding-top: 8%;
+              font-size: @subSize;
+              font-family: @font;
+              font-weight: normal;
+              text-align: center;
+            }
+          }
+          .left-box{
+            position: absolute;
+            left: 0px;
+            top: 80%;
+            background-color: @gray;
+            width: 41%;
+            height: 35%;
+            border: 1px solid @white;
+            display: flex;
+            justify-content: center;
+            h4{
+              width: 90%;
+              padding-top: 8%;
+              font-size: @subSize;
+              font-family: @font;
+              font-weight: normal;
+              text-align: center;
+            }
+          }
+        }
+        .project-words{
+          align-self: center;
+          margin-top: 10%;
+          width: 45%;
+          p{
+            margin: 5px;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+  .footer-container{
+    width: 100%;
+    height: 250px;
+    background-color:@footer;
+    display: flex;
+    flex-direction: column;
+    h5{
+      font-family: @font;
+      font-weight: @footerWeight;
+      font-size: @footerSize;
+      line-height: @footerLineHeight;
+      color: @footerColor;
+
+    }
+    p{
+      color: @gray;
+      font-weight: 100;
+      font-family: @font;
+      font-size: 12px;
+    }
+    input{
+      color: @footer;
+      width: 98%;
+      height: 30px;
+      border-radius: 5px;
+      font-size: @footerSize;
+      margin: 2% 0;
+    }
+    .contact{
+      display: flex;
+      flex-flow: row wrap;
+      padding-top: 3%;
+      .email{
+        margin: 0px 6%;
+        h5{
+          margin-bottom: 2%;
+          width: 100%;
+        }
+      }
+      .offices{
+        display: flex;
+        flex-flow: row wrap;
+        width: 49%;
+        align-content: space-around;
+        .office{
+          margin: 0px 5%;
+          p{
+            margin: 10px 0px;
+          }
+        }
+      }
+    }
+    .copyright{
+      align-self: center;
+      margin-top: 3%;
+      margin-bottom: 2%;
+      width: 30%;
+    }
+  }//end of footer
+}//end of container
+.invisible {
+  display: none;
+}
